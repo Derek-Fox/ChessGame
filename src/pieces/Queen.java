@@ -12,14 +12,16 @@ public class Queen extends Piece {
         super(color, 9);
     }
 
-    @Override
-    protected void move() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
 
     @Override
     public String toString() {
         return "Queen{" + "color= " + color + '}';
+    }
+
+    @Override
+    public void move(String endSquare) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
