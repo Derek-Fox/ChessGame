@@ -21,6 +21,6 @@ public abstract class Piece {
         return "Piece{" + "color=" + color + ", value=" + value + '}';
     }
         
-    protected abstract void move();
+    public abstract void move(String endSquare);
     
 }

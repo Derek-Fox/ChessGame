@@ -65,6 +65,17 @@ public class Board {
         this.numCurrentPieces = count;
     }
 
+    /**
+     * Returns the Square object with given input String name. !Only to be used
+     * when input String has already been determined to be a valid Square name!
+     *
+     * @param name String name of desired square
+     * @return Square with given name
+     */
+    public Square getSquareWithName(String name) {
+        return this.squares[name.charAt(0) - 'A'][name.charAt(1) - '1'];
+    }
+
     @Override
     public String toString() {
         return "Board{" + "numCurrentPieces=" + numCurrentPieces + ", squares=" + Arrays.deepToString(squares) + '}';
